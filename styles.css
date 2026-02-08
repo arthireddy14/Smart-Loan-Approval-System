@@ -1,0 +1,103 @@
+
+body {
+    background-color: #f4f6fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Main app container */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* ====== TITLE ====== */
+h1 {
+    color: #1f4fd8;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+/* Subtitle / description */
+p {
+    color: #555;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ====== SIDEBAR ====== */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #7ee62f, #83de4f);
+    color: white;
+}
+
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] label {
+    color: white !important;
+}
+
+/* Sidebar inputs */
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] select {
+    border-radius: 8px;
+}
+
+/* ====== INPUT FIELDS ====== */
+input, select {
+    border-radius: 8px !important;
+    border: 1px solid #ddd !important;
+}
+
+/* ====== RADIO BUTTONS ====== */
+div[role="radiogroup"] label {
+    font-weight: 500;
+}
+
+/* ====== BUTTON ====== */
+button[kind="primary"] {
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[kind="primary"]:hover {
+    background: linear-gradient(90deg, #16a34a, #15803d);
+}
+
+/* ====== RESULT BOXES ====== */
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+/* Success */
+div[data-testid="stAlert"][class*="success"] {
+    background-color: #dcfce7;
+    border-left: 6px solid #22c55e;
+}
+
+/* Error */
+div[data-testid="stAlert"][class*="error"] {
+    background-color: #fee2e2;
+    border-left: 6px solid #ef4444;
+}
+
+/* Info */
+div[data-testid="stAlert"][class*="info"] {
+    background-color: #e0f2fe;
+    border-left: 6px solid #d112e2;
+}
+
+/* ====== CONFIDENCE TEXT ====== */
+strong {
+    color: #b9d81f;
+}
+
+/* ====== FOOTER (OPTIONAL) ====== */
+footer {
+    visibility: hidden;
+}
